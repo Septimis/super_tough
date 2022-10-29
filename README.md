@@ -1,9 +1,9 @@
 # Building Bridges
 ## DESCRIPTION
-Given a m x n 2D binary matrix that represents a map of 1s land and 0s water, return the minimum cost to connect all the islands with bridges or -1 if it is impossible.  A bridge is a vertical or horizontal path over water between islands with a cost associated with the number of water cells the path traverses.  In other words, all bridges are straight, and can only run either north-south or east-west.  An island is surrounded by water and formed by connecting adjacent land horizontally or vertically.
+Given a `m` x `n` 2D binary matrix that represents a map of 1s (land) and 0s (water), return the minimum cost to connect all the islands with bridges or -1 if it is impossible.  A bridge is a vertical or horizontal path over water between islands with a cost associated with the number of water cells the path traverses.  In other words, all bridges are straight, and can only run either north-south or east-west.  An island is surrounded by water and formed by connecting adjacent land horizontally or vertically.
 
 ## Input Format
-The first line will contain two integers m and n representing the size of the matrix m x n. The next m lines will each contain n integers representing the values of the matrix.
+The first line will contain two integers `m` and `n` representing the size of the matrix `m` x `n`. The next `m` lines will each contain `n` integers representing the values of the matrix.
 ```
 m n
 grid[0][0], grid[0][1], ..., grid[0][n-1]
