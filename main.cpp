@@ -2,8 +2,9 @@
 #include <fstream>
 #include <string>
 
-int minBridges(bool** map) {
-
+int minBridges(bool** map, int numRows, int numCols) {
+    /* Your code here */
+    
     return -1;
 }
 
@@ -26,13 +27,13 @@ int main(int argc, char** argv) {
         
         std::string inputLine;
         bool newPuzzle = true;
+        int rowIndex = 0;
 
         while(!intputFile.eof()) { //go over each line of the input
             std::getline(intputFile, inputLine);
-            int rowIndex = 0;
             if(inputLine == "") {
                 //call bridges function
-                std::cout << "Output: " << minBridges(rows) << std::endl << std::endl;
+                std::cout << "Output: " << minBridges(rows, numRows, numCols) << std::endl << std::endl;
 
                 //deallocate the memory
                 for(int j = 0; j < numRows; j++)
@@ -60,9 +61,9 @@ int main(int argc, char** argv) {
             }
 
             for(int j = 0; j < inputLine.length(); j += 2) {
-                rows[rowIndex][j / 2] = int(inputLine[j]) - 48;
+                rows[rowIndex][j / 2] = (bool)(int(inputLine[j]) - 48);
             }
-            std::cout << inputLine << std::endl;
+            //std::cout << inputLine << std::endl;
             rowIndex++;
         }
     }
