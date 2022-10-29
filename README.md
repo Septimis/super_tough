@@ -16,16 +16,16 @@ The output will be a single integer representing the minimum total cost to conne
 
 ## EXAMPLES
 
-`1 0 1`
-`0 0 0`  = 2 (you can make bridges at indexes [0][1] & [1][2])
-`0 1 1`
+`1 0 1`<br>
+`0 0 0`  = 2 (you can make bridges at indexes [0][1] & [1][2])<br>
+`0 1 1`<br>
 
-`1 0 0 1 0`
-`0 0 0 0 0`
-`0 1 1 1 0` = 3 (you can make bridges at indexes [0][1], [0][2], & [1][3])
-`0 1 1 0 0`
-`0 0 1 1 1`
+`1 0 0 1 0`<br>
+`0 0 0 0 0`<br>
+`0 1 1 1 0` = 3 (you can make bridges at indexes [0][1], [0][2], & [1][3])<br>
+`0 1 1 0 0`<br>
+`0 0 1 1 1`<br>
 
-`1 0 1`
-`0 0 0` = -1 (While there is a possible connection at [0][1], the land at [2][1] cannot connect to any other land)
-`0 1 0`
+`1 0 1`<br>
+`0 0 0` = -1 (While there is a possible connection at [0][1], the land at [2][1] cannot connect to any other land)<br>
+`0 1 0`<br>
